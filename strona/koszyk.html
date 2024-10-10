@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Koszyk - PapieryOG</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<style>
+	
+	body
+	{
+		color: white;
+	}
+	
+	</style>
+	
+	
+</head>
+<body>
+
+     <!-- Logo -->
+    <div class="logo">
+        <img src="logo.png" alt="Logo Papier Toaletowy" width="400px" height="auto">
+    </div>
+
+    <!-- Pasek nawigacyjny -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-around">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="onas.html">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Usługi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Główny blok treści -->
+    <div class="main-content">
+        <div class="container">
+            <h2>Koszyk</h2>
+
+            <!-- Lista produktów w koszyku -->
+            <div class="cart-items">
+                <p>Koszyk jest pusty.</p>
+                <!-- Przykładowe produkty dodane dynamicznie w przyszłości -->
+                <!-- <div class="cart-item">
+                    <p>Produkt 1 - 7 zł</p>
+                    <p>Produkt 2 - 8 zł</p>
+                </div> -->
+            </div>
+
+            <hr>
+
+            <!-- Formularz adresu klienta -->
+            <h4>Dane do wysyłki</h4>
+            <form id="checkout-form">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="first-name" class="form-label">Imię</label>
+                        <input type="text" class="form-control" id="first-name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last-name" class="form-label">Nazwisko</label>
+                        <input type="text" class="form-control" id="last-name" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="address" class="form-label">Miasto</label>
+                        <input type="text" class="form-control" id="address" required>
+                    </div>
+                
+				
+                    <div class="col-md-6">
+                        <label for="address" class="form-label">Ulica</label>
+                        <input type="text" class="form-control" id="address" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="postal-code" class="form-label">Kod pocztowy</label>
+                        <input type="text" class="form-control" id="postal-code" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Telefon</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                </div>
+
+                <!-- Metoda płatności -->
+                <h4>Metoda płatności</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="credit-card" value="credit-card" checked>
+                    <label class="form-check-label" for="credit-card">
+                        Karta kredytowa/debetowa
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal">
+                    <label class="form-check-label" for="paypal">
+                        PayPal
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="bank-transfer" value="bank-transfer">
+                    <label class="form-check-label" for="bank-transfer">
+                        Blik
+                    </label>
+                </div>
+
+                <!-- Przycisk zatwierdzenia zamówienia -->
+                <button type="submit" class="btn btn-primary mt-4">Zatwierdź zamówienie</button>
+            </form>
+        </div>
+    </div>
+
+	<br><br><br><br><br>
+
+    <!-- Stopka -->
+    <div class="footer">
+        <span>© 2024 Srajlepiej company sp. Z.O.O</span>
+        <b><span>Koszyk</span></b>
+    </div>
+
+    <!-- Bootstrap 5 JS (opcjonalnie, jeśli potrzebujesz funkcji JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
